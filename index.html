@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Rock, Paper, Scissors</h1>
+    <div class="grid-container">
+        <h1 class="header">Rock, Paper, Scissors</h1>
         <div class="choices">
-            <button id="rock" class="choice">Rock</button>
-            <button id="paper" class="choice">Paper</button>
-            <button id="scissors" class="choice">Scissors</button>
+            <button id="rock" class="main choice fa-regular fa-hand-back-fist fa-10x"></button>
+            <button id="paper" class="main choice fa-regular fa-hand fa-10x"></button>
+            <button id="scissors" class="main choice fa-regular fa-hand-scissors fa-10x"></button>
         </div>
-        <div class="result">
+        <div class="result footer">
             <p id="result-text"></p>
         </div>
-        <div class="score">
-            <t>User Score:  </t>
+        <div class="score footer">
+            <t>User Score: </t>
             <t id="user-score"></t>
-            <t>Computer Score:  </t>
+            <t>Computer Score: </t>
             <t id="comp-score"></t>
         </div>
-        <button id="reset">Reset</button>
+        <button id="reset" class="footer">Reset</button>
     </div>
+    <script src="https://kit.fontawesome.com/157f78c84d.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
+
 </html>
